@@ -1,0 +1,37 @@
+{
+	"total": 2,
+	"total_pages": 1,
+	"current_page": 0,
+	"limit": 12,
+	"trips": [{
+		"id": 2,
+		"agency_id": 2,
+		"name": "",
+		"banner": "http://www.shorttermmissions.com/trips/get_picture.php?media_id=129",
+		"description": "This trip is open to everyone! Team member trip fee is $2985.00(US) and includes RT airfare from your nearest hub airport city, host lodging in private homes, most meals, in-country airfare (if needed), ground transportation, and some local sightseeing! This is an exciting opportunity to serve God and the China schools for about four weeks or so this summer! No experience is required but English is the prerequisite and an education background and singing experience are always a plus. We provide a solid, easy to learn method (TEFOL) so that you will be able to use your English skills in a teaching environment for all ages and levels of English. Our teams teach in private schools in Guangdong Province in southern China. The use of Biblical textbooks for our teaching purposes is ok. Some sightseeing is included and hosted by the school. Some of our past team members stuck around long enough to venture out on their own to take a walk on the Great Wall, visited the ancient Ming Dynasty Tombs, dropped by Tiannamen Square, went surfing in Beihai, visited famous Guilin, and visited an orphan home or two; held a lot of babies too! If you wish to serve in China, this is the trip for you! Register by clicking through to our site or go to http://www.commitministries.com.",
+		"start_date": "2018-05-19T16:00:00.000Z",
+		"end_date": "2018-07-06T16:00:00.000Z",
+		"location": "China",
+		"estimated_cost": 2985,
+		"created_at": "2017-10-21T12:15:19.000Z",
+		"status": "open",
+		"agency_name": "COMMIT Ministries International",
+		"agency_logo": "http://www.shorttermmissions.com/images/organization_logos/115.jpg",
+		"tags": ["East Asia", "English", "China"]
+	}, {
+		"id": 1,
+		"agency_id": 1,
+		"name": "Myanmar November 2017",
+		"banner": "",
+		"description": "<ul>\r\n<li>Ministry involves teaching English, Art and spiritual growth lessons to children and youth</li>\r\n<li>Mandarin-speaking audience</li>\r\n<li>Participants should be able to speak simple Mandarin</li>\r\n</ul>",
+		"start_date": "2017-10-31T16:00:00.000Z",
+		"end_date": "2017-11-06T16:00:00.000Z",
+		"location": "Myanmar",
+		"estimated_cost": 1200,
+		"created_at": "2017-10-21T07:19:48.000Z",
+		"status": "open",
+		"agency_name": "Cru Singapore",
+		"agency_logo": "http://www.cru.org.sg/images/cru-singapore-logo.svg",
+		"tags": ["Myanmar", "Southeast Asia", "Community Outreach", "English"]
+	}]
+}
