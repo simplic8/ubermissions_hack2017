@@ -158,8 +158,10 @@ class Trip extends React.Component {
         .then((resp) => resp.json())
         .then((reply) => {
 
-            this.state.tripsObj= reply.trips
-            
+            //this.state.tripsObj= reply.trips
+            var existing_state = this.state;
+            existing_state.tripsObj = reply.trips;
+            this.setState(existing_state);
             /*
             for (var i = 0; i < this.state.tripsObj.length; i++) {
                 this.state.tripsDIV.push(
