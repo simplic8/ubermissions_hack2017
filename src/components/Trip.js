@@ -69,7 +69,7 @@ class Trip extends React.Component {
                     </Card>
             </div>
         );
-        
+        /*
         this.state.tripsDIV.push(
             <div style={styleD}>
                     <Card>
@@ -152,14 +152,16 @@ class Trip extends React.Component {
                         </CardActions>
                     </Card>
             </div>
-        );
+        );*/
 
         fetch('./request.json')
         .then((resp) => resp.json())
         .then((reply) => {
 
-            this.state.tripsObj= reply.trips
-            
+            //this.state.tripsObj= reply.trips
+            var existing_state = this.state;
+            existing_state.tripsObj = reply.trips;
+            this.setState(existing_state);
             /*
             for (var i = 0; i < this.state.tripsObj.length; i++) {
                 this.state.tripsDIV.push(
@@ -222,35 +224,47 @@ class Trip extends React.Component {
         var tripsObj2 = []
 
         //var url = "http://10.20.44.12:4000/trips?filters=east%20asia,china,myanmar";
-        for (var i = 0; i < this.state.tripsObj.length; i++) {
-            this.state.tripsDIV.push(
-                <div style={styleD}>
-                        <Card>
-                            <CardHeader
-                                title="Cru"
-                                subtitle="RevUp 2017"
-                                avatar=""
-                            />
+        // for (var i = 0; i < this.state.tripsObj.length; i++) {            
+        //     this.state.tripsDIV.push(
+        //         <div key="{this.state.tripsObj[i].id}" style={styleD}>
+        //                 <Card>
+        //                     <CardHeader
+        //                         title="Cru"
+        //                         subtitle="RevUp 2017"
+        //                         avatar=""
+        //                     />
 
-                            <CardMedia
-                                overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
-                            >
-                                <img src="img/card_img1.jpg" alt="" style={styleC}/>
-                            </CardMedia>
+        //                     <CardMedia
+        //                         overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+        //                     >
+        //                         <img src="img/card_img1.jpg" alt="" style={styleC}/>
+        //                     </CardMedia>
 
-                            <CardTitle title="Trip" subtitle="Card subtitle" />
-                            <CardText>
-                                Information about the Trip
-                            </CardText>
-                            <CardActions>
-                            <Link to={"trip_detail"}><FlatButton label="Find Out More" /></Link>
-                            <FlatButton label="Sign Up" />
-                            </CardActions>
-                        </Card>
-                </div>
-            );
-        }
+        //                     <CardTitle title="Trip" subtitle="Card subtitle" />
+        //                     <CardText>
+        //                         Information about the Trip
+        //                     </CardText>
+        //                     <CardActions>
+        //                     <Link to={"trip_detail"}><FlatButton label="Find Out More" /></Link>
+        //                     <FlatButton label="Sign Up" />
+        //                     </CardActions>
+        //                 </Card>
+        //         </div>
+        //     );
+        // }
         
+        // return ( 
+        //     <div style={styleB}>
+
+        //         <NavBar />
+                
+        //         <SearchTrip />
+        //         <MuiThemeProvider>
+        //             {this.state.tripsDIV}
+        //         </MuiThemeProvider>
+
+        //     </div>
+        // );
         return ( 
             <div style={styleB}>
 
@@ -258,11 +272,36 @@ class Trip extends React.Component {
                 
                 <SearchTrip />
                 <MuiThemeProvider>
-                    {this.state.tripsDIV}
-                </MuiThemeProvider>
+                    {this.state.tripsObj.map(trip => {
+                        return <div key={trip.id} style={styleD}>
+                            <Card>
+                                <CardHeader
+                                    title="Cru"
+                                    subtitle="RevUp 2017"
+                                    avatar=""
+                                />
 
+                                <CardMedia
+                                    overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+                                >
+                                    <img src="img/card_img1.jpg" alt="" style={styleC}/>
+                                </CardMedia>
+
+                                <CardTitle title="Trip" subtitle="Card subtitle" />
+                                <CardText>
+                                    Information about the Trip
+                                </CardText>
+                                <CardActions>
+                                <Link to={"trip_detail"}><FlatButton label="Find Out More" /></Link>
+                                <FlatButton label="Sign Up" />
+                                </CardActions>
+                            </Card>
+                        </div>;
+                    })}
+                </MuiThemeProvider>
             </div>
         );
+
     }
 }
 
