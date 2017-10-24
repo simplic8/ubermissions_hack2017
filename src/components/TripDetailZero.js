@@ -1,8 +1,10 @@
 import React from 'react';
 import NavBar from './NavBar.js';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import RaisedButton from 'material-ui/RaisedButton';
 import SwipeableViews from 'react-swipeable-views';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Link } from 'react-router-dom';
 
 const styles = {
 
@@ -100,17 +102,25 @@ export default class TripDetailZero extends React.Component {
           onChangeIndex={this.handleChange}
         >
           <div style={{fontFamily: 'Robotto'}}>
-            <h2 style={styles.headline}>Tabs with slide effect</h2>
-            Swipe to see the next slide.<br />
+            <h2 style={styles.headline}>Myanmar November 2017</h2>
+            Ministry involves teaching English, Art and spiritual growth lessons to children and youth Mandarin-speaking audience. Participants should be able to speak simple Mandarin.
+            <br />
           </div>
           <div style={styles.slide}>
-            slide n°2
+    "description": "Ministry involves teaching English, Art and spiritual growth lessons to children and youth Mandarin-speaking audience. Participants should be able to speak simple Mandarin.", <br />
+		"start_date": "2017-10-31T16:00:00.000Z", <br />
+		"end_date": "2017-11-06T16:00:00.000Z", <br />
+		"location": "Myanmar", <br />
+		"estimated_cost": 1200, <br />
+		"created_at": "2017-10-21T07:19:48.000Z", <br />
+		"status": "open", <br />
+		"agency_name": "Cru Singapore", <br />
           </div>
           <div style={styles.slide}>
 
           </div>
         </SwipeableViews>
-
+        <Link to="/agency"><RaisedButton label="Sign Up Now" secondary={true}/></Link>
         </MuiThemeProvider>
       </div>
     );

@@ -5,6 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 //import NavBar from './components/NavBar.js';
 import Trip from './components/Trip.js';
 import Main from './components/Main.js';
+import Agency from './components/Agency.js';
 import TripDetailZero from './components/TripDetailZero.js';
 
 /* Home component */
@@ -25,6 +26,7 @@ class App extends React.Component {
         <Route exact path="/" component={Home}/>
         <Route exact path="/trip" component={Trip}/>
         <Route exact path="/trip_detail0" component={TripDetailZero}/>
+        <Route exact path="/agency" component={Agency}/>
       </div>
     )
   }

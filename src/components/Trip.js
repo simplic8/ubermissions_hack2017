@@ -49,18 +49,18 @@ class Trip extends React.Component {
                         <CardHeader
                             title="Cru"
                             subtitle="RevUp 2017"
-                            avatar=""
+                            avatar="img/cru_logo.jpg"
                         />
 
                         <CardMedia
-                            overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+                            overlay={<CardTitle title="Myanmar November 2017" subtitle="English, Art and spiritual growth" />}
                         >
                         <div style={{width:'100px',height:'200px',overflow:'hidden'}}>                        
                             <img src="img/card_img1.jpg" alt="" style={styleC}/>
                         </div>
                         </CardMedia>
                         <CardText>
-                            Information about the Trip
+                        Ministry involves teaching English, ...
                         </CardText>
                         <CardActions>
                         <Link to={"trip_detail0"}><FlatButton label="Find Out More" /></Link>
@@ -76,11 +76,11 @@ class Trip extends React.Component {
                         <CardHeader
                             title="COMMIT Ministries"
                             subtitle="2017 Outreach"
-                            avatar=""
+                            avatar="img/commit_logo.jpg"
                         />
 
                         <CardMedia
-                            overlay={<CardTitle title="E.A. Missions" subtitle="Overlay subtitle" />}
+                            overlay={<CardTitle title="E.A. Missions" subtitle="Connect with the east" />}
                         >
                         <div style={{width:'100px',height:'200px',overflow:'hidden'}}>
                             <img src="http://www.shorttermmissions.com/trips/get_picture.php?media_id=129" alt="" style={styleC}/>
@@ -104,19 +104,19 @@ class Trip extends React.Component {
                         <CardHeader
                             title="Cru"
                             subtitle="RevUp 2017"
-                            avatar=""
+                            avatar="img/cru_logo.jpg"
                         />
 
                         <CardMedia
-                            overlay={<CardTitle title="E.A. Missions" subtitle="Overlay subtitle" />}
+                            overlay={<CardTitle title="Children Outreach" subtitle="Fun with kids!" />}
                         >
                         <div style={{width:'100px',height:'200px',overflow:'hidden'}}>
-                            <img src="http://www.shorttermmissions.com/trips/get_picture.php?media_id=129" alt="" style={styleC}/>
+                            <img src="https://www.adventures.org/mission-trips/images/2017/amb.jpg" alt="" style={styleC}/>
                         </div>
                         </CardMedia>
 
                         <CardText>
-                        inistry involves teaching English, Art
+                        Reaching out to children in ...
                         </CardText>
                         <CardActions>
                         <Link to={"trip_detail0"}><FlatButton label="Find Out More" /></Link>
@@ -136,15 +136,15 @@ class Trip extends React.Component {
                         />
 
                         <CardMedia
-                            overlay={<CardTitle title="E.A. Missions" subtitle="Overlay subtitle" />}
+                            overlay={<CardTitle title="Excite!" subtitle="Join us!" />}
                         >
                         <div style={{width:'100px',height:'200px',overflow:'hidden'}}>
-                            <img src="http://www.shorttermmissions.com/trips/get_picture.php?media_id=129" alt="" style={styleC}/>
+                            <img src="https://ak2.picdn.net/shutterstock/videos/7298152/thumb/1.jpg?i10c=img.resize(height:160)" alt="" style={styleC}/>
                         </div>
                         </CardMedia>
 
                         <CardText>
-                        This trip is open to everyone! Team member trip...
+                        Join us in this exciting ...
                         </CardText>
                         <CardActions>
                         <Link to={"trip_detail0"}><FlatButton label="Find Out More" /></Link>
