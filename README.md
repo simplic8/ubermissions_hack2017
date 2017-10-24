@@ -6,9 +6,9 @@ Find out more about our solution for the challenge we tried to tackle in the Pre
 
 Brought to you by:
 ### Team Uber Missions
-Michael Yin
-Mark Roma
-Christopher Kwan
-Mervyn Lee
+- Michael Yin
+- Mark Roma
+- Christopher Kwan
+- Mervyn Lee
 
 ### For the larger body of Christ
