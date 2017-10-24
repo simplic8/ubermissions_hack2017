@@ -69,7 +69,7 @@ class Trip extends React.Component {
                     </Card>
             </div>
         );
-        /*
+
         this.state.tripsDIV.push(
             <div style={styleD}>
                     <Card>
@@ -152,8 +152,9 @@ class Trip extends React.Component {
                         </CardActions>
                     </Card>
             </div>
-        );*/
+        )
 
+/*
         fetch('./request.json')
         .then((resp) => resp.json())
         .then((reply) => {
@@ -190,14 +191,14 @@ class Trip extends React.Component {
                             </Card>
                     </div>
                 );
-            }*/
+            }
         })
-
         //var url = "http://10.20.44.12:4000/trips?filters=east%20asia,china,myanmar";
 
         
     }
-
+*/
+    }
     render() {
 
         var styleD = {
@@ -272,6 +273,9 @@ class Trip extends React.Component {
                 
                 <SearchTrip />
                 <MuiThemeProvider>
+
+                { this.state.tripsDIV }
+
                     {this.state.tripsObj.map(trip => {
                         return <div key={trip.id} style={styleD}>
                             <Card>
